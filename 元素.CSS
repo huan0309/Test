@@ -1,0 +1,501 @@
+#menu{
+  display: flex;
+}
+.disign_area{
+  width: 18%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items:center; 
+}
+.viewer{
+  float: left;/*浮動區域(只可左右)*/
+  width: 100%;
+  height: auto;
+  min-height: 975px;
+  padding:5px 1% 5px 1%; /*邊距*/
+  background-color: #fdfffe;
+  display:flex;
+  align-items:flex-start; /*垂直對齊方式*/
+  /* justify-content:center;  */
+  justify-content:flex-start; /*水平對齊方式*/
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:flex-start;
+}
+.set_area{
+  min-height: 500px;
+}
+.menu_li{
+  border: 3px solid white;
+  width: 85%;
+  padding: 2px;
+  margin-bottom: 10px;
+  list-style-type:none;
+  font-size: 20px;
+  display: inline-block;
+  border-radius:8px;
+}
+.menu_li1{
+  border-style:outset;
+  /* list-style-type:none; */
+  cursor: pointer;
+  background-color: #f6f0f0;
+  width: 100%;
+  margin-bottom: 10px;
+  /* height: 20px; */
+  color: rgb(9, 9, 9);
+  display: inline-block;
+}
+
+.new_block{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  min-height: 150px;
+  width: 100%;
+  /* margin: 10px; */
+  /* margin-top: 15px; */
+  border: black solid;
+  border-radius: 2px;
+  /* justify-content: flex-start; */
+}
+.delete_btn{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.set_btn{
+  position: absolute;
+  right: 45px;
+  top: 0px;
+}
+.reset_btn{
+  position: absolute;
+  right: 115px;
+  top: 0px;
+}
+
+.text_area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.list_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.btn_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.link_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.img_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.video_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+.div_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+.select_area{
+  position: relative;
+  display: flex;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+#clean_all,#cre_div_block{
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  font-size:15px;
+  border-style:inset;
+  /* background-color: #a3a3a3; */
+  padding-left: 10px;
+  display:inline-block;
+  margin-bottom: 10px;
+  border: 3px solid #b3cadd;
+}
+#cre_div_block:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: #c0b9b9;
+}
+#clean_all:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: #c0b9b9;
+}
+#cre_div_block{
+  width: 60%;
+  height: 30px;
+  border-style:inset;
+  border: 3px solid #b3cadd;
+  border-radius: 5px;
+  font-size:15px;
+  padding-left: 10px;
+  display:inline-block;
+  margin-bottom: 10px;
+}
+#cre_div_block:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: #c0b9b9;
+}
+
+#new_h1_set,#new_ol_set,#li_edit,#new_btn_set,#set_link,#new_img_set,#img_edit,
+#new_video_set,#video_edit,#block,#new_select_set,#select_edit{
+  border: 1px solid white;
+  width: 95%;
+  border-radius:5px;
+  padding: 5px;
+  /* flex-direction:column; */
+}
+#sent_h1,#sent_ol,#sent_btn,#sent_link,#sent_img_,#sent_edit_img,#sent_video_,
+#sent_edit_video,#sent_edit_li,#sent_block,#sent_select,#sent_edit_select{
+  border-radius:10px;
+  width: 65px;
+  background-color: rgb(220, 162, 149);  
+}
+#cancel_h1,#cancel_ol,#cancel_btn,#cancel_link,#cancel_img_,#cancel_edit_img,
+#cancel_video_,#cancel_edit_video,#cancel_edit_li,#cancel_block,#cancel_select,#cancel_edit_select{
+  border-radius:10px;
+  width: 65px;
+  background-color:rgb(174, 222, 186);
+}
+#sent_h1:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_h1:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_ol:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_ol:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_edit_li:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_edit_li:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_btn:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_link:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_link:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_img_:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_img_:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_edit_img:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_edit_img:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_video_:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_video_:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_edit_video:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_edit_video:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_select:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_select:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_edit_select:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_edit_select:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#text_delete,#delete_link,#delete_btn,#sent_select_ti{
+  border-radius:10px;
+  width: 65px;
+  background-color:rgb(130, 168, 224);
+}
+#text_delete:hover{
+  border-radius:10px;
+  background-color:rgb(91, 136, 202);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_olli,#delete_olli,#sent_select_a,#delete_select_a{
+  border-radius:10px;
+  width: 70px;
+  background-color:rgb(190, 210, 143);
+}
+#sent_olli:hover{
+  border-radius:10px;
+  background-color:rgb(150, 168, 109);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_select_a:hover{
+  border-radius:10px;
+  background-color:rgb(150, 168, 109);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#delete_olli:hover{
+  border-radius:10px;
+  background-color:rgb(150, 168, 109);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#delete_select_a:hover{
+  border-radius:10px;
+  background-color:rgb(150, 168, 109);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#delete_btn:hover{
+  border-radius:10px;
+  background-color:rgb(91, 136, 202);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#sent_select_ti:hover{
+  border-radius:10px;
+  background-color:rgb(91, 136, 202);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#li_type_btn{
+  border-radius:10px;
+  width: 70px;
+  background-color:rgb(139, 132, 188);
+}
+#li_type_btn:hover{
+  border-radius:10px;
+  background-color:rgb(102, 95, 151);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#li_type{
+  width: 130px;
+}
+
+#sent_block:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transform: translateY(4px);
+  background-color: rgb(196, 151, 151);
+}
+#cancel_block:hover{
+  border-radius:10px;
+  background-color:rgb(152, 223, 170);
+  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(4px);
+}
+#preview_ol{
+  display: flex;
+  height: auto;
+  flex-direction:column;
+  flex-wrap:wrap;
+  border: 1px solid white;
+  background-color: white;
+}
+#preview_select{
+  border: 1px solid white;
+  background-color: white;
+  height: auto;
+}
+/* .menu_area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.2;
+  margin: 10px;
+  min-width: 50px;
+  border: #8c8c8c dashed;
+  justify-content: center;
+} */
+.menu_area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.2;
+  margin: 10px;
+  min-width: 200px;
+  border: #8c8c8c dashed;
+}
+
+#div_cre_div_block{
+  margin-right:10px ;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
+#viewerImg1,#viewerVideo{
+  width: auto;
+  height: auto;
+  max-width:250px;
+  min-height:150px;
+  display:block;
+  margin: auto;
+  border: 1px solid white;
+}
+#imgsave,#view_block,#notview_block,#imgsave1{
+  width: 30px;
+  height: 30px;
+  cursor: pointer; 
+}
+#save{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#but_div{
+  display: flex;
+  align-items:stretch;
+}
